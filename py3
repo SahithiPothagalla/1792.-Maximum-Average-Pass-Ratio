@@ -7,7 +7,7 @@ class Solution:
             sum+=p/q
             A.append(((p-q)/(q*(q+1)), p, q)) # change sign
         heapify(A)
-        for _ in range(k):
+        for _ in range(extraStudents):
             (r, p, q)=A[0]
             if r==0: break
             sum-=r # change sign
